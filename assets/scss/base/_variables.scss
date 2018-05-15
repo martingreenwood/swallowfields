@@ -1,0 +1,62 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-smaller-than-tablet    : "max-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1160px" !default;
+$bp-smaller-than-desktop   : "max-width: 1160px" !default;
+$bp-larger-than-desktophd : "min-width: 1360px" !default;
+
+// Colors
+$light-grey: #DAD9D6 !default;
+$dark-grey: #3b3c43 !default;
+$primary-color: #3b3c43 !default;
+
+$secondary-color: #784987 !default;
+
+$border-color: white !default;
+
+$link-color: $primary-color !default;
+$font-color: $primary-color !default;
+
+$blue: #375E77 !default;
+$teal: #2D8692 !default;
+$yellow: #C8B852 !default;
+$red: #F65058 !default;
+$silver: #9C9EA0 !default;
+
+// Typography
+
+$base-font: "Montserrat", Helvetica, Arial, sans-serif !default;
+$heading-font: "Montserrat", Helvetica, Arial, sans-serif !default;
+
+$font-family: $base-font !default;
+$heading-font-family: $heading-font !default;
+$nav-font-family: $heading-font !default;
+
+//Grid Variables
+$container-width: 1200px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
+
+// Misc
+$global-radius: 0px !default;
+
+$table-header-font-weight:      500;
+$table-header-font-color:       $primary-color;
+
+$table-cell-padding:            1.6rem;
+$table-condensed-cell-padding:  $table-cell-padding/2;
+
+
+$table-bg:                      #fff;
+$table-bg-accent:               $light-grey;
+$table-bg-hover:                $light-grey;
+$table-bg-active:               $light-grey;
+$table-border-color:            $light-grey;

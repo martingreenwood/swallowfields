@@ -1,0 +1,55 @@
+{
+    "key": "group_5adde43be1e5d",
+    "title": "Accent Colour",
+    "fields": [
+        {
+            "key": "field_5adde452920aa",
+            "label": "Accent Colour Select",
+            "name": "accent_colour",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none: No Accent": "none: No Accent",
+                "blue": "Blue",
+                "teal": "Teal",
+                "yellow": "Yellow",
+                "red": "Red",
+                "silver": "Silver"
+            },
+            "default_value": [
+                "none: No Accent"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "templates\/activities.php"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1524491643
+}

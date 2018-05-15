@@ -1,0 +1,201 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+
+
+.hamburger {
+	padding: 0;
+	border-radius: 0;
+	height: inherit;
+	position: relative;
+	margin: 15px auto 0 auto;
+	display: block;
+	z-index: 99;
+
+	.hamburger-box {
+		display: block;
+	}
+}
+
+#site-navigation {
+	float: left;
+	width: 100%;
+	background: #eee;
+	position: relative;
+	margin-top: -442px;
+	margin-bottom: 15px;
+	text-align: center;
+
+	@media (#{$bp-larger-than-tablet}) {
+		margin-top: -258px;
+	}
+
+	@media (#{$bp-larger-than-desktop}) {
+		text-align: left;
+		margin-top: -50px;
+	}
+
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;
+
+	.logo {
+
+		float: none;
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		@media (#{$bp-larger-than-desktop}) {
+
+			float: left;
+			padding: 5px;
+			margin: 0 0 0 0;
+		}
+
+		svg {
+			width: 48px;
+			display: block;
+
+			path {
+				fill: $dark-grey;
+			}
+		}
+	}
+
+	.menu-top-container {
+		float: right;
+		width: 100%;
+
+		@media (#{$bp-larger-than-desktop}) {
+			width: auto;
+		}
+
+		ul {
+			list-style: none;
+			text-align: center;
+			margin-bottom: 10px;
+
+			@media (#{$bp-larger-than-desktop}) {
+				text-align: right;
+				margin-bottom: 0;
+			}
+
+			li {
+				display: inline-block;
+				margin-bottom: 0;
+				width: 95%;
+
+				@media (#{$bp-larger-than-tablet}) {
+					width: 49.5%;
+				}
+
+				@media (#{$bp-larger-than-desktop}) {
+					width: auto;
+				}
+
+				&:hover {
+
+					a {
+					}
+
+					.sub-menu {
+						background-color: $primary-color;
+					}
+				}
+
+				a {
+					display: block;
+					text-decoration: none;
+					color: $dark-grey;
+					font-size: 1.2rem;
+					font-weight: 200;
+					font-family: $nav-font-family;
+					padding: 0 5px;
+					line-height: 47px;
+					text-transform: uppercase;
+
+					@media (#{$bp-larger-than-desktop}) {
+						padding: 0 10px;
+					}
+				}
+
+				&:last-of-type {
+					
+					a {
+						@media (#{$bp-larger-than-desktop}) {
+							background: $dark-grey;
+							color: white;
+						}
+					}
+				}
+			}
+
+			.sub-menu {
+				position: absolute;
+				width: auto;
+				z-index: 1;
+				display: none;
+				margin: 0;
+				padding-top: 10px;
+				text-align: left;
+
+				li {
+					display: block;
+
+					a {
+						display: block;
+					}
+
+					&:last-of-type {
+						a {
+							text-transform: capitalize;
+							border: none; 
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (#{$bp-larger-than-desktophd}) {
+		.menu-toggle {
+			display: none;
+		}
+
+		.menu-primary-container {
+			display: block;
+		}
+	}
+
+}
+
+.toggled {
+
+	#site-navigation {
+		margin-top: 0;
+	}
+}
+
+.fixed {
+
+	#site-navigation {
+		@media (#{$bp-larger-than-desktop}) {
+			margin-top: 0;
+		}
+	}
+
+	.hamburger {
+		@media (#{$bp-larger-than-desktop}) {
+			display: none;
+		}
+	}
+}
