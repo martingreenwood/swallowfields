@@ -41,7 +41,7 @@
 
 		<button class="hamburger menu-toggle hamburger--spin" type="button" aria-controls="primary-menu" aria-expanded="false">
 			<span class="hamburger-box ">
-				<span class="hamburger-inner"></span>
+				<span class="hamburger-inner"></span> <element>MENU</element> 
 			</span>
 		</button>
 	

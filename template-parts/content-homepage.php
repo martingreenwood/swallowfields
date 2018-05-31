@@ -20,9 +20,9 @@
 		<?php
 			the_content();
 		?>
-		<div class="call">
+		<?php /* ?><div class="call">
 			<a href="<?php echo home_url( '/book-now' ); ?>" title="Call to Book">Book Now</a>
-		</div>
+		</div><?php */ ?>
 	</div>
 
 </article>

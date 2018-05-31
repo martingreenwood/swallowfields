@@ -36,6 +36,9 @@
 						<?php if (get_field( 'google', 'options' )): ?>
 						<li><a href="<?php echo get_field( 'google', 'options' ); ?>" title="Follow us on google plus"><i class="fab fa-google-plus-g"></i></a></li>
 						<?php endif; ?>
+						<?php if (get_field( 'pinterest', 'options' )): ?>
+						<li><a href="<?php echo get_field( 'pinterest', 'options' ); ?>" title="Follow us on pinterest"><i class="fab fa-pinterest"></i></a></li>
+						<?php endif; ?>
 					</ul>
 				</div>
 

@@ -12,12 +12,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
-		<h2>Whats Included</h2>
+		<h2>Introduction</h2>
 		<?php
 			the_content();
 		?>
 	</div>
 
+	<?php
+	/*
 	<div class="entry-content">
 		<h2>The Accommodation</h2>
 		<?php $tent = get_field( 'tent_selector' ); ?>
@@ -25,5 +27,7 @@
 		<?php echo apply_filters( 'the_content', $tent->post_content ); ?>
 		<a class="more" href="<?php echo home_url( '/book-now' ); ?>" title="">Book Now</a>
 	</div>
+	*/
+	?>
 
 </article>

@@ -18,6 +18,30 @@
 	display: block;
 	z-index: 99;
 
+	@media (#{$bp-larger-than-desktop}) {
+		margin: 15px;
+		float: right
+	}
+
+	element {
+		color: white;
+		line-height: 24px;
+		margin-top: 30px;
+		display: inline-block;
+		margin-left: -3px;
+		
+		@media (#{$bp-larger-than-desktop}) {
+			margin-top: 0;
+			margin-left: 0;
+			float: right;
+			margin-right: 52px;
+		}
+	}
+
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+		height: 2px;
+	}
+
 	.hamburger-box {
 		display: block;
 	}
@@ -132,7 +156,7 @@
 					
 					a {
 						@media (#{$bp-larger-than-desktop}) {
-							background: $dark-grey;
+							background: $red;
 							color: white;
 						}
 					}

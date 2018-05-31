@@ -1,6 +1,6 @@
 {
     "key": "group_5ad87199bd85f",
-    "title": "Section Builder",
+    "title": "Facilities Sections",
     "fields": [
         {
             "key": "field_5ad871db9181d",
@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_5ad872299181f",
             "min": 0,
             "max": 0,
             "layout": "row",
@@ -163,30 +163,9 @@
     "location": [
         [
             {
-                "param": "page_type",
+                "param": "options_page",
                 "operator": "==",
-                "value": "front_page"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "templates\/activities.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "default"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "tents"
+                "value": "Theme-options"
             }
         ]
     ],
@@ -198,5 +177,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "\/\/ Homepage",
-    "modified": 1525255768
+    "modified": 1527694385
 }
