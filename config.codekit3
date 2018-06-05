@@ -121,6 +121,36 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/img\/dogs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/dogs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/fire.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/fire.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/hot-tub.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/hot-tub.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/img\/icon.png": {
 		"ft": 32768,
 		"iS": 14701,
@@ -137,6 +167,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/img\/icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/log.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/log.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -221,6 +261,56 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/img\/plus-sign.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/sauna.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/sauna.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/shower.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/shower.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/towel.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/towel.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/wide-tv.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/wide-tv.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/wifi.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/wifi.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1247,20 +1337,6 @@
 		"oAP": "\/page-contact-us.php",
 		"oF": 0
 		},
-	"\/page-our-accommodation.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/page-our-accommodation.php",
-		"oF": 0
-		},
-	"\/page-our-breaks.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/page-our-breaks.php",
-		"oF": 0
-		},
 	"\/page-our-facilities.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1273,6 +1349,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-our-location.php",
+		"oF": 0
+		},
+	"\/page-spa-lodges.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-spa-lodges.php",
+		"oF": 0
+		},
+	"\/page-therapies.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-therapies.php",
 		"oF": 0
 		},
 	"\/page.php": {
@@ -1342,6 +1432,27 @@
 		"oAP": "\/sidebar.php",
 		"oF": 0
 		},
+	"\/single-amenities.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/single-amenities.php",
+		"oF": 0
+		},
+	"\/single-facilities.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/single-facilities.php",
+		"oF": 0
+		},
+	"\/single-tents.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/single-tents.php",
+		"oF": 0
+		},
 	"\/single.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1399,6 +1510,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/content-single.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-tents.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-tents.php",
 		"oF": 0
 		},
 	"\/template-parts\/content.php": {

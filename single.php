@@ -28,32 +28,25 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php if (have_rows('row')): ?>
+	<?php if (have_rows('row', 'options')): ?>
 	<section class="sections">
-		
-		<?php while(have_rows('row')): the_row(); ?>
+		<div class="row">
+			<ul class="accordion">
+			<?php $number = 0; while(have_rows('row', 'options')): the_row(); ?>
 
-			<?php $row_bg = get_sub_field( 'row_bg' ); ?>
-			<div class="row <?php the_sub_field( 'row_content_bg_colour' ); ?>">
-
-				<div class="image" style="background-image: url(<?php echo $row_bg['url']; ?>)">
-					&nbsp;
-				</div>
-				<div class="content">
-					<div class="table">
-						<div class="cell middle">
-							<h2><?php the_sub_field( 'row_title' ); ?></h2>
-							<hr>
-							<?php the_sub_field( 'row_content' ); ?>
-							<a class="more" href="<?php echo home_url( '/contact-us' ); ?>?activity=<?php the_sub_field( 'row_title' ); ?>#gf_1" title="Enquire">Enquire</a>
-						</div>
+				<?php $row_bg = get_sub_field( 'row_bg' ); ?>
+				<li class="<?php the_sub_field( 'row_content_bg_colour' ); ?>" style="background-image: url(<?php echo $row_bg['url']; ?>)">
+					<a class="toggle" href="#"><span><?php the_sub_field( 'row_title' ); ?></span></a>
+					<div class="inner">
+						<hr>
+						<?php the_sub_field( 'row_content' ); ?>
+						<a class="more" href="<?php the_sub_field( 'row_link' ); ?>" title="Find Out More">Find Out More</a>
 					</div>
-				</div>
-				
-			</div>
+				</li>
 
-		<?php endwhile; ?>
-		
+			<?php endwhile; ?>
+			</ul>
+		</div>
 	</section>
 	<?php endif ?>
 

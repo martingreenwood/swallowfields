@@ -1,6 +1,6 @@
 <?php
 /**
- * The our-location template file
+ * The accommodation template file
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -12,8 +12,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<?php if (have_posts()): ?>
 			<div class="container maincopy">
+				<?php if (have_posts()): ?>
 				<div class="row">
 				<?php
 				while ( have_posts() ) : the_post();
@@ -23,28 +23,30 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				?>
 				</div>
+				<?php endif; ?>
 
 				<div class="row">
-					<?php
+				<?php
 					$i = 1;
 					query_posts(array( 
-						'post_type' => 'amenities',
+						'post_type' => 'tents',
 						'showposts' => -1
 					));
 					?>
 					<?php while (have_posts()) : the_post(); ?>
 						<div class="item columns four">
-							<h3><a href="<?php the_permalink(); ?>" title=""><?php the_title(); ?></a></h3>
+							<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 							<?php the_post_thumbnail( 'full' ); ?>
 							<p><?php echo get_the_excerpt(); ?></p>
+							<a class="book" href="<?php the_permalink() ?>" title="">Book Now</a>
 						</div>
 
 						<?php if($i % 3 == 0) {echo '</div><div class="row">';} ?>
 
-					<?php $i++; endwhile; wp_reset_query(); wp_reset_postdata(); ?>
+				<?php $i++; endwhile; wp_reset_query(); wp_reset_postdata(); ?>
 				</div>
+			
 			</div>
-			<?php endif ?>
 
 		</main>
 	</div>

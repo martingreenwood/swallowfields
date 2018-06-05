@@ -114,7 +114,9 @@ setTimeout( function() { scroll(0,0); }, 1);
 =            LOADER            =
 ==============================*/
 
-
+(function($) {
+	
+})(jQuery);
 
 /*===============================
 =            HEADER             =

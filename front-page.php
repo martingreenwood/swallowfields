@@ -44,7 +44,12 @@ get_header(); ?>
 							<h2><?php the_sub_field( 'row_title' ); ?></h2>
 							<hr>
 							<?php the_sub_field( 'row_content' ); ?>
-							<a class="more" href="<?php the_sub_field( 'row_link' ); ?>" title="Find Out More">Find Out More</a>
+							<?php if (get_sub_field( 'link_text' )):
+								$link_text = get_sub_field( 'link_text' );
+							else: 
+								$link_text = 'Find Out More';
+							endif ?>
+							<a class="more" href="<?php the_sub_field( 'row_link' ); ?>" title="Find Out More"><?php echo $link_text; ?></a>
 						</div>
 					</div>
 					<?php $row_illustration = get_sub_field( 'row_illustration' ); ?>

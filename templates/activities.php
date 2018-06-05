@@ -45,7 +45,12 @@ get_header(); ?>
 							<h2><?php the_sub_field( 'row_title' ); ?></h2>
 							<hr>
 							<?php the_sub_field( 'row_content' ); ?>
-							<a class="more" href="<?php the_sub_field( 'row_link' ); ?>?activity=<?php the_sub_field( 'row_title' ); ?>#gf_1" title="Enquire">Enquire</a>
+							<?php if (get_sub_field( 'link_text' )):
+								$link_text = get_sub_field( 'link_text' );
+							else: 
+								$link_text = 'Enquire';
+							endif ?>
+							<a class="more" href="<?php the_sub_field( 'row_link' ); ?>" title="Enquire"><?php echo $link_text ?></a>	
 						</div>
 					</div>
 				</div>
