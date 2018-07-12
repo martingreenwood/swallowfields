@@ -24,6 +24,8 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				?>
 
+				<a class="more" href="<?php echo home_url( '/tents/spa-lodge' ); ?>" title="View lodge">View lodge</a>
+
 			</div>
 		</main>
 	</div>
@@ -50,7 +52,11 @@ get_header(); ?>
 							else: 
 								$link_text = 'Enquire';
 							endif ?>
-							<a class="more" href="<?php the_sub_field( 'row_link' ); ?>" title="Enquire"><?php echo $link_text ?></a>	
+							<?php if (get_sub_field( 'row_link_type' ) == 'Page' ): ?>
+								<a class="more" href="<?php the_sub_field( 'row_link' ); ?>" title="<?php echo $link_text ?>"><?php echo $link_text ?></a>	
+							<?php elseif (get_sub_field( 'row_link_type' ) == 'PDF' ): ?>
+								<a target="_blank" class="more" href="<?php the_sub_field( 'row_file' ); ?>" title="<?php echo $link_text ?>"><?php echo $link_text ?></a>	
+							<?php endif ?>
 						</div>
 					</div>
 				</div>
@@ -77,14 +83,14 @@ get_header(); ?>
 				<?php while (have_rows('places_to_visit_columns', 'options')): the_row(); ?>
 					<div class="item columns four">
 						<img src="<?php echo the_sub_field( 'image' ); ?>" alt="">
-						<h3><?php the_sub_field( 'title' ); ?></h3>
+						<h3><a href="<?php the_sub_field( 'link' ); ?>" title=""><?php the_sub_field( 'title' ); ?></a></h3>
 						<p><?php the_sub_field( 'text' ); ?></p>
 					</div>
 				<?php endwhile; ?>
 			<?php endif; ?>
 			</div>
 
-			<a class="more" href="<?php echo home_url( '/book-now' ); ?>" title="">Book Now</a>
+			<a class="more" href="<?php echo home_url( '/tents/spa-lodge/' ); ?>" title="">View Lodge</a>
 
 		</div>
 

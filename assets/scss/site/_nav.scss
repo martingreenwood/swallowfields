@@ -50,19 +50,18 @@
 #site-navigation {
 	float: left;
 	width: 100%;
+	height: 100vh;
+
 	background: #eee;
 	position: relative;
-	margin-top: -442px;
+	margin-top: -100vh;
 	margin-bottom: 15px;
 	text-align: center;
-
-	@media (#{$bp-larger-than-tablet}) {
-		margin-top: -258px;
-	}
 
 	@media (#{$bp-larger-than-desktop}) {
 		text-align: left;
 		margin-top: -50px;
+		height: auto;
 	}
 
 	-webkit-transition: all .25s linear;
@@ -72,14 +71,12 @@
 	        transition: all .25s linear;
 
 	.logo {
-
 		float: none;
 		display: inline-block;
 		margin-top: 10px;
 		margin-bottom: 10px;
 
 		@media (#{$bp-larger-than-desktop}) {
-
 			float: left;
 			padding: 5px;
 			margin: 0 0 0 0;
@@ -98,15 +95,24 @@
 	.menu-top-container {
 		float: right;
 		width: 100%;
+		display: table;
+		height: 100%;
+		position: absolute;
+		top: 0;
 
 		@media (#{$bp-larger-than-desktop}) {
 			width: auto;
+			height: auto;
+			top: auto;
+			position: relative;
 		}
 
 		ul {
 			list-style: none;
 			text-align: center;
-			margin-bottom: 10px;
+			margin-bottom: 0;
+			display: table-cell;
+			vertical-align: middle;
 
 			@media (#{$bp-larger-than-desktop}) {
 				text-align: right;
@@ -118,10 +124,6 @@
 				margin-bottom: 0;
 				width: 95%;
 
-				@media (#{$bp-larger-than-tablet}) {
-					width: 49.5%;
-				}
-
 				@media (#{$bp-larger-than-desktop}) {
 					width: auto;
 				}
@@ -132,7 +134,25 @@
 					}
 
 					.sub-menu {
-						background-color: $primary-color;
+						background-color: #eee;
+						display: block;
+
+						li {
+
+							&:hover {
+								background-image: $red;
+								color: white;
+							}
+							&:last-of-type {
+					
+								a {
+									@media (#{$bp-larger-than-desktop}) {
+										background: inherit;
+										color: inherit;
+									}
+								}
+							}
+						}
 					}
 				}
 
@@ -144,11 +164,12 @@
 					font-weight: 200;
 					font-family: $nav-font-family;
 					padding: 0 5px;
-					line-height: 47px;
+					line-height: 3;
 					text-transform: uppercase;
 
 					@media (#{$bp-larger-than-desktop}) {
 						padding: 0 10px;
+						line-height: 47px;
 					}
 				}
 
@@ -164,24 +185,54 @@
 			}
 
 			.sub-menu {
-				position: absolute;
-				width: auto;
-				z-index: 1;
-				display: none;
-				margin: 0;
-				padding-top: 10px;
-				text-align: left;
+				border-top: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				margin-bottom: 0;
+				padding: 7px 0;
+				width: 63%;
+				display: block;
+				margin: 0 auto;
+
+				@media (#{$bp-larger-than-desktop}) {
+					position: absolute;
+					width: auto;
+					z-index: 1;
+					display: none;
+					margin: 0;
+					padding-bottom: 0;
+					padding-top: 10px;
+					text-align: left;
+				}
 
 				li {
 					display: block;
+					width: 100%;
+					-webkit-transition: all .25s linear;
+					   -moz-transition: all .25s linear;
+					    -ms-transition: all .25s linear;
+					     -o-transition: all .25s linear;
+					        transition: all .25s linear;
+
+					&:hover {
+						background-color: $red;
+
+						a {
+							color: white;
+						}
+					}
 
 					a {
 						display: block;
+						line-height: 3;
+
+						@media (#{$bp-larger-than-desktop}) {
+							line-height: 47px;
+						}
 					}
 
 					&:last-of-type {
 						a {
-							text-transform: capitalize;
+							text-transform: uppercase;
 							border: none; 
 						}
 					}

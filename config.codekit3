@@ -103,6 +103,30 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/acf-json\/group_5b1e569797088.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5b1e569797088-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_5b1e5716539ff.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5b1e5716539ff-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_5b3b9d11a3ae7.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5b3b9d11a3ae7-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -121,35 +145,60 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/dogs.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/dogs.svg",
+	"\/assets\/img\/dogs-welcome.png": {
+		"ft": 32768,
+		"iS": 5313,
+		"oA": 0,
+		"oAP": "\/assets\/img\/dogs-welcome.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/assets\/img\/fire.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/fire.svg",
+	"\/assets\/img\/fire-pit-camp-fire.png": {
+		"ft": 32768,
+		"iS": 5328,
+		"oA": 0,
+		"oAP": "\/assets\/img\/fire-pit-camp-fire.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/assets\/img\/hot-tub.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/hot-tub.svg",
+	"\/assets\/img\/flat-screen-tv.png": {
+		"ft": 32768,
+		"iS": 18229,
+		"oA": 0,
+		"oAP": "\/assets\/img\/flat-screen-tv.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/free-wifi.png": {
+		"ft": 32768,
+		"iS": 17413,
+		"oA": 0,
+		"oAP": "\/assets\/img\/free-wifi.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/hot-showers.png": {
+		"ft": 32768,
+		"iS": 19938,
+		"oA": 0,
+		"oAP": "\/assets\/img\/hot-showers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/img\/icon.png": {
 		"ft": 32768,
@@ -172,15 +221,27 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/assets\/img\/log.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/log.svg",
+	"\/assets\/img\/linen-towels.png": {
+		"ft": 32768,
+		"iS": 4331,
+		"oA": 0,
+		"oAP": "\/assets\/img\/linen-towels.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/log-burner.png": {
+		"ft": 32768,
+		"iS": 5641,
+		"oA": 0,
+		"oAP": "\/assets\/img\/log-burner.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/img\/logo-w.png": {
 		"ft": 32768,
@@ -266,55 +327,27 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/assets\/img\/sauna.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/sauna.svg",
+	"\/assets\/img\/private-hot-tub.png": {
+		"ft": 32768,
+		"iS": 5485,
+		"oA": 0,
+		"oAP": "\/assets\/img\/private-hot-tub.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/assets\/img\/shower.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/shower.svg",
+	"\/assets\/img\/private-sauna.png": {
+		"ft": 32768,
+		"iS": 3875,
+		"oA": 0,
+		"oAP": "\/assets\/img\/private-sauna.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/towel.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/towel.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/wide-tv.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/wide-tv.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/wifi.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/wifi.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/js\/base-min.js": {
 		"ft": 64,
@@ -1328,6 +1361,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-about-us.php",
+		"oF": 0
+		},
+	"\/page-book-now.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-book-now.php",
 		"oF": 0
 		},
 	"\/page-contact-us.php": {

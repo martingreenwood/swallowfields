@@ -10,6 +10,49 @@ Text Domain: swallowfields
 
 .page-template-activities {
 
+	.blue {
+		.places-to-visit, #primary {
+			.more {
+				background-color: $blue;
+			}
+		}
+	}
+	.teal {
+		.places-to-visit, #primary {
+			.more {
+				background-color: $teal;
+			}
+		}
+	}
+	.yellow {
+		.places-to-visit, #primary {
+			.more {
+				background-color: $yellow;
+			}
+		}
+	}
+	.red {
+		.places-to-visit, #primary {
+			.more {
+				background-color: $red;
+			}
+		}
+	}
+	.silver {
+		.places-to-visit, #primary {
+			.more {
+				background-color: $silver;
+			}
+		}
+	}
+	.dark-grey {
+		.places-to-visit, #primary {
+			.more {
+				background-color: $dark-grey;
+			}
+		}
+	}
+
 	#primary {
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -45,19 +88,19 @@ Text Domain: swallowfields
 				margin-bottom: 2rem;
 			}
 
-			.more {
-				padding: 1.5rem 2.5rem;
-				text-transform: uppercase;
-				margin: 4rem 0 0 0;
-				display: inline-block;
-				text-decoration: none;
-				width: auto;
-				color: white;
-			}
-
 			&:last-of-type {
 				margin-bottom: 0;
 			}
+		}
+
+		.more {
+			padding: 1.5rem 2.5rem;
+			text-transform: uppercase;
+			margin: 4rem 0 0 0;
+			display: inline-block;
+			text-decoration: none;
+			width: auto;
+			color: white;
 		}
 	}
 
@@ -78,7 +121,7 @@ Text Domain: swallowfields
 				float: left;
 				position: relative;
 
-				@media (#{$bp-larger-than-tablet}) {
+				@media (#{$bp-larger-than-desktop}) {
 					position: absolute;
 					width: 50%;
 					height: 100%;
@@ -96,7 +139,7 @@ Text Domain: swallowfields
 				position: relative;
 				z-index: 1;
 
-				@media (#{$bp-larger-than-tablet}) {
+				@media (#{$bp-larger-than-desktop}) {
 					width: 50%;
 				}
 
@@ -161,6 +204,10 @@ Text Domain: swallowfields
 			margin-bottom: 6rem;
 			color: inherit;
 
+			a {
+				text-decoration: none;
+			}
+
 			-webkit-transition: padding .3s linear;
 			-moz-transition: padding .3s linear;
 			-ms-transition: padding .3s linear;
@@ -187,6 +234,10 @@ Text Domain: swallowfields
 				
 				h3 {
 					padding: 1.5rem 2rem;
+
+					a {
+						text-decoration: none;
+					}
 				}
 			}
 
@@ -204,6 +255,10 @@ Text Domain: swallowfields
 				display: inline-block;
 				margin-bottom: 4rem;
 				color: inherit;
+
+				a {
+					text-decoration: none;
+				}
 
 				-webkit-transition: padding .3s linear;
 				-moz-transition: padding .3s linear;

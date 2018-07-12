@@ -38,53 +38,59 @@
 				get_the_title()
 			) );
 		?>
+		<?php if (get_field( 'itinerary_pdf' )): ?>
+			<a class="more" target="_blank" href="<?php the_field( 'itinerary_pdf' ); ?>" title="">View Full Itinerary</a>
+		<?php endif ?>
+		<?php if (get_field( 'floorplan_pdf' )): ?>
+			<a class="more" target="_blank" href="<?php the_field( 'floorplan_pdf' ); ?>" title="">View Floorplan</a>
+		<?php endif ?>
 	</div>
 
 	<div class="icons">
 		<ul><!--
 			<?php if (get_field( 'private_hot_tub' )): ?>
 			--><li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/img/hot-tub.svg'; ?>" alt="icon"> <span>Private Hot Tub</span>
+					<img src="<?php echo get_template_directory_uri() . '/assets/img/private-hot-tub.png'; ?>" alt="icon"> <span>Private Hot Tub</span>
 				</li><!--
 			<?php endif ?>
 			<?php if (get_field( 'private_sauna' )): ?>
 				--><li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/img/sauna.svg'; ?>" alt="icon"> <span>Private sauna</span>
+					<img src="<?php echo get_template_directory_uri() . '/assets/img/private-sauna.png'; ?>" alt="icon"> <span>Private sauna</span>
 				</li><!--
 			<?php endif ?>
 			<?php if (get_field( 'fire_pit' )): ?>
 				--><li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/img/fire.svg'; ?>" alt="icon"> <span>fire pit &amp; camp fire</span>
+					<img src="<?php echo get_template_directory_uri() . '/assets/img/fire-pit-camp-fire.png'; ?>" alt="icon"> <span>fire pit &amp; camp fire</span>
 				</li><!--
 			<?php endif ?>
 			<?php if (get_field( 'linen' )): ?>
 				--><li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/img/towel.svg'; ?>" alt="icon"> <span>Linen &amp; Towels</span>
+					<img src="<?php echo get_template_directory_uri() . '/assets/img/linen-towels.png'; ?>" alt="icon"> <span>Linen &amp; Towels</span>
 				</li><!--
 			<?php endif ?>
 			<?php if (get_field( 'hot_showers' )): ?>
 				--><li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/img/shower.svg'; ?>" alt="icon"> <span>Hot Showers</span>
+					<img src="<?php echo get_template_directory_uri() . '/assets/img/hot-showers.png'; ?>" alt="icon"> <span>Hot Showers</span>
 				</li><!--
 			<?php endif ?>
 			<?php if (get_field( 'flat_screen_tv' )): ?>
 				--><li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/img/wide-tv.svg'; ?>" alt="icon"> <span>flat screen TV</span>
+					<img src="<?php echo get_template_directory_uri() . '/assets/img/flat-screen-tv.png'; ?>" alt="icon"> <span>flat screen TV</span>
 				</li><!--
 			<?php endif ?>
 			<?php if (get_field( 'dogs_welcome' )): ?>
 				--><li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/img/dogs.svg'; ?>" alt="icon"> <span>dogs welcome</span>
+					<img src="<?php echo get_template_directory_uri() . '/assets/img/dogs-welcome.png'; ?>" alt="icon"> <span>dogs welcome</span>
 				</li><!--
 			<?php endif ?>
 			<?php if (get_field( 'free_wi-fi' )): ?>
 				--><li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/img/wifi.svg'; ?>" alt="icon"> <span>free wi-fi</span>
+					<img src="<?php echo get_template_directory_uri() . '/assets/img/free-wifi.png'; ?>" alt="icon"> <span>free wi-fi</span>
 				</li><!--
 			<?php endif ?>
 			<?php if (get_field( 'log_burner' )): ?>
 				--><li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/img/log.svg'; ?>" alt="icon"> <span>log burner</span>
+					<img src="<?php echo get_template_directory_uri() . '/assets/img/log-burner.png'; ?>" alt="icon"> <span>log burner</span>
 				</li><!--
 			<?php endif ?>
 		--></ul>

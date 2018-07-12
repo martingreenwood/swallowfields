@@ -36,8 +36,11 @@ get_header(); ?>
 		<?php while(have_rows('row', 'options')): the_row(); ?>
 
 			<?php $row_bg = get_sub_field( 'row_bg' ); ?>
-			<div class="row <?php the_sub_field( 'row_content_bg_colour' ); ?>" style="background-image: url(<?php echo $row_bg['url']; ?>)">
+			<div class="row <?php the_sub_field( 'row_content_bg_colour' ); ?>">
 
+				<div class="image" style="background-image: url(<?php echo $row_bg['url']; ?>)">
+					
+				</div>
 				<div class="content">
 					<div class="table">
 						<div class="cell middle">
@@ -49,7 +52,11 @@ get_header(); ?>
 							else: 
 								$link_text = 'Find Out More';
 							endif ?>
-							<a class="more" href="<?php the_sub_field( 'row_link' ); ?>" title="Find Out More"><?php echo $link_text; ?></a>
+							<?php if (get_sub_field( 'row_link_type' ) == 'Page' ): ?>
+								<a class="more" href="<?php the_sub_field( 'row_link' ); ?>" title="<?php echo $link_text ?>"><?php echo $link_text ?></a>	
+							<?php elseif (get_sub_field( 'row_link_type' ) == 'PDF' ): ?>
+								<a target="_blank" class="more" href="<?php the_sub_field( 'row_file' ); ?>" title="<?php echo $link_text ?>"><?php echo $link_text ?></a>	
+							<?php endif ?>
 						</div>
 					</div>
 					<?php $row_illustration = get_sub_field( 'row_illustration' ); ?>

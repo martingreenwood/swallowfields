@@ -313,6 +313,13 @@ $alpha: 1;
 			background-repeat: no-repeat;
 			background-size: cover;
 
+			.image {
+				position: absolute;
+				width: 50%;
+				height: 100%;
+				background-size: cover;
+			}
+
 			.content {
 				width: 100%;
 				padding: 12rem 8rem;
@@ -391,8 +398,6 @@ $alpha: 1;
 				}
 
 				.image {
-					z-index: 1;
-					background-position: 0 0;
 				}
 				
 				.content {
@@ -917,6 +922,17 @@ $alpha: 1;
 
 .single-tents, .single-facilities, .single-amenities {
 
+	.entry-content {
+		a.more {
+			margin: 4rem 2rem;
+			display: inline-block;
+			border-top: 1px solid white;
+			padding: 1rem 0rem 0rem 1rem;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+
 	.book {
 		margin-top: 4rem;
 		text-transform: uppercase;
@@ -944,8 +960,24 @@ $alpha: 1;
 			position: relative;
 			margin-bottom: 0;
 			direction: rtl;
-			background-repeat: no-repeat;
-			background-size: cover;
+			// background-repeat: no-repeat;
+			// background-size: cover;
+
+			.image {
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				width: 100%;
+				height: 400px;
+				float: left;
+				position: relative;
+
+				@media (#{$bp-larger-than-desktop}) {
+					position: absolute;
+					width: 50%;
+					height: 100%;
+				}
+			}
 
 			.content {
 				width: 100%;
@@ -1000,6 +1032,10 @@ $alpha: 1;
 
 				p {
 					color: white;
+
+					a {
+						color: inherit;
+					}
 				}
 
 				.more {
@@ -1050,6 +1086,59 @@ $alpha: 1;
 				}
 			}
 		}
+	}
+}
+
+.single-facilities, .single-amenities {
+
+	.maincopy {
+
+		.row {
+
+			img {
+				width: 400px;
+				margin: 0 auto;
+			}
+
+			.gallery {
+
+				ul {
+					list-style: none;
+					padding: 0;
+					margin: 0;
+
+					li {
+						width: 100%;
+						display: block;
+						margin: 0 0 20px 0;
+						box-sizing: border-box;
+
+						@media (#{$bp-larger-than-desktop}) {
+							width: 33.333%;
+							display: inline-block;
+							margin: 0;
+							vertical-align: top;
+						}
+
+						img {
+							display: block;
+							width: 95%;
+							margin: 0 2.5%;
+							filter: brightness(1);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.single-tents {
+
+	.book {
+		background: $red;
+		color: white;
+		border: 0;
 	}
 }
 

@@ -40,7 +40,17 @@ get_header(); ?>
 					<div class="inner">
 						<hr>
 						<?php the_sub_field( 'row_content' ); ?>
-						<a class="more" href="<?php the_sub_field( 'row_link' ); ?>" title="Find Out More">Find Out More</a>
+						<?php if (get_sub_field( 'link_text' )):
+								$link_text = get_sub_field( 'link_text' );
+							else: 
+								$link_text = 'Enquire';
+							endif ?>
+							
+						<?php if (get_sub_field( 'row_link_type' ) == 'Page' ): ?>
+							<a class="more" href="<?php the_sub_field( 'row_link' ); ?>" title="<?php echo $link_text ?>"><?php echo $link_text ?></a>	
+						<?php elseif (get_sub_field( 'row_link_type' ) == 'PDF' ): ?>
+							<a target="_blank" class="more" href="<?php the_sub_field( 'row_file' ); ?>" title="<?php echo $link_text ?>"><?php echo $link_text ?></a>	
+						<?php endif ?>
 					</div>
 				</li>
 
