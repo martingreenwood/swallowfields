@@ -44,7 +44,7 @@
         },
         {
             "key": "field_5addf41b13fda",
-            "label": "Places To Visit (Global)",
+            "label": "Things to do around Malvern Section.",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -60,7 +60,7 @@
         },
         {
             "key": "field_5addf42213fdb",
-            "label": "Places to Visit Text",
+            "label": "Text",
             "name": "places_to_visit_text",
             "type": "wysiwyg",
             "instructions": "",
@@ -78,10 +78,10 @@
             "delay": 0
         },
         {
-            "key": "field_5addf43c13fdc",
-            "label": "Columns",
-            "name": "places_to_visit_columns",
-            "type": "repeater",
+            "key": "field_5b5738ef059ca",
+            "label": "Thing One",
+            "name": "thing_one",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -90,75 +90,58 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "field_5addf6e313fde",
-            "min": 3,
-            "max": 3,
-            "layout": "table",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_5addf46913fdd",
-                    "label": "Image",
-                    "name": "image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_5addf6e313fde",
-                    "label": "Title",
-                    "name": "title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_5addf6ea13fdf",
-                    "label": "Text",
-                    "name": "text",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
-                }
-            ]
+            "post_type": [
+                "amenities"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5b573919059cb",
+            "label": "Thing Two",
+            "name": "thing_two",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "amenities"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5b573921059cc",
+            "label": "Thing Three",
+            "name": "thing_three",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "amenities"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
         },
         {
             "key": "field_5ae08a87b206f",
@@ -327,5 +310,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1527694445
+    "modified": 1532442933
 }

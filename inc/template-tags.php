@@ -227,7 +227,7 @@ function swallowfields_post_tyoes() {
 			'public' 		=> true,
 			'has_archive' 	=> false,
 			'menu_icon' 	=> 'dashicons-location-alt',
-			'supports' 		=> array( 'title', 'editor', 'thumbnail' )
+			'supports' 		=> array( 'title', 'editor', 'thumbnail', 'excerpt' )
 		)
 	);
 }

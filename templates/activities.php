@@ -79,15 +79,48 @@ get_header(); ?>
 			</div>
 
 			<div class="row">
-			<?php if (have_rows('places_to_visit_columns', 'options')): ?>
-				<?php while (have_rows('places_to_visit_columns', 'options')): the_row(); ?>
-					<div class="item columns four">
-						<img src="<?php echo the_sub_field( 'image' ); ?>" alt="">
-						<h3><a href="<?php the_sub_field( 'link' ); ?>" title=""><?php the_sub_field( 'title' ); ?></a></h3>
-						<p><?php the_sub_field( 'text' ); ?></p>
-					</div>
-				<?php endwhile; ?>
-			<?php endif; ?>
+				<div class="item columns four">
+				<?php 
+				$thing_one = get_field( 'thing_one', 'options' ); if( $thing_one ): 
+					$post = $thing_one;
+					setup_postdata( $post );
+					?>
+					<a href="<?php the_permalink(); ?>" title="">
+						<?php the_post_thumbnail( 'full' ); ?>
+					</a>
+					<h3><a href="<?php the_permalink(); ?>" title=""><?php the_title(); ?></a></h3>
+					<p><?php echo get_the_excerpt(); ?></p>
+					<?php wp_reset_postdata(); ?>
+				<?php endif; ?>
+				</div>
+				<div class="item columns four">
+				<?php 
+				$thing_two = get_field( 'thing_two', 'options' ); if( $thing_two ): 
+					$post = $thing_two;
+					setup_postdata( $post );
+					?>
+					<a href="<?php the_permalink(); ?>" title="">
+						<?php the_post_thumbnail( 'full' ); ?>
+					</a>
+					<h3><a href="<?php the_permalink(); ?>" title=""><?php the_title(); ?></a></h3>
+					<p><?php echo get_the_excerpt(); ?></p>
+					<?php wp_reset_postdata(); ?>
+				<?php endif; ?>
+				</div>
+				<div class="item columns four">
+				<?php 
+				$thing_three = get_field( 'thing_three', 'options' ); if( $thing_three ): 
+					$post = $thing_three;
+					setup_postdata( $post );
+					?>
+					<a href="<?php the_permalink(); ?>" title="">
+						<?php the_post_thumbnail( 'full' ); ?>
+					</a>
+					<h3><a href="<?php the_permalink(); ?>" title=""><?php the_title(); ?></a></h3>
+					<p><?php echo get_the_excerpt(); ?></p>
+					<?php wp_reset_postdata(); ?>
+				<?php endif; ?>
+				</div>
 			</div>
 
 			<a class="more" href="<?php echo home_url( '/tents/spa-lodge/' ); ?>" title="">View Lodge</a>
