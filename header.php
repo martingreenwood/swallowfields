@@ -48,15 +48,19 @@
 	</header>
 
 	<?php 
-		$bannerimage = get_the_post_thumbnail_url( get_the_ID(), 'full' ); 
-		$feature_image = get_field( 'feature_image' );
-		if ($feature_image):
-			$bannerimage = $feature_image;
-		elseif ($bannerimage):
-			$bannerimage = $bannerimage;
-		else:
-			$bannerimage = get_template_directory_uri() . '/assets/img/banner-default.jpg';
-		endif;
+		if (is_home()) {
+			$bannerimage = get_template_directory_uri() . '/assets/img/news-header.jpg';
+		} else {
+			$bannerimage = get_the_post_thumbnail_url( get_the_ID(), 'full' ); 
+			$feature_image = get_field( 'feature_image' );
+			if ($feature_image):
+				$bannerimage = $feature_image;
+			elseif ($bannerimage):
+				$bannerimage = $bannerimage;
+			else:
+				$bannerimage = get_template_directory_uri() . '/assets/img/banner-default.jpg';
+			endif;
+		}
 	?>
 	<section id="banner" class="parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $bannerimage; ?>">
 		<div class="blurb">
@@ -66,23 +70,26 @@
 					<div class="site-branding">
 						<?php if ( is_front_page() ): ?>
 							<?php the_custom_logo(); ?>
+						<?php elseif (is_home()): ?>
+							<a href="<?php echo home_url( '/' ); ?>" title="">
+								<img class="icon-no-logo" src="<?php the_field( 'site_icon', 'options' ); ?>" alt="">
+							</a>
+							<h1>NEWS</h1>
 						<?php else: ?>
 							<a href="<?php echo home_url( '/' ); ?>" title="">
 								<img class="icon-no-logo" src="<?php the_field( 'site_icon', 'options' ); ?>" alt="">
 							</a>
 						<?php endif; ?>
 					</div>
-
-					<?php if ( is_front_page() ): 
+					<?php 
+					if ( is_front_page() || is_home() ): 
 						// do nowt
+					elseif ( is_404() ): 
 					?>
-					<?php elseif (is_page(get_option( 'page_for_posts' ))): ?>
-					<h1><?php echo get_the_title( get_option( 'page_for_posts' ) ); ?></h1>
-					<?php elseif ( is_404() ): ?>
 					<h1>404</h1>
 					<?php else: ?>
 					<h1><?php the_title(); ?></h1>
-					<?php endif ?>
+					<?php endif ;?>
 
 				</div>
 			</div>

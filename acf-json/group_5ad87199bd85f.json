@@ -99,7 +99,7 @@
                     "choices": {
                         "Page": "Page",
                         "PDF": "PDF",
-                        "None": "None"
+                        "NONE": "NONE"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
@@ -271,6 +271,13 @@
                 "operator": "==",
                 "value": "amenities"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "facilities"
+            }
         ]
     ],
     "menu_order": 0,
@@ -281,5 +288,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "\/\/ Homepage",
-    "modified": 1531219508
+    "modified": 1533810529
 }

@@ -21,14 +21,34 @@ get_header(); ?>
 
 					endwhile; // End of the loop.
 					?>
-					<?php if (get_field( 'file_url' )): ?>
-						<a class="book" href="<?php the_field( 'file_url' ); ?>" target="_blank" title=""><?php the_field( 'link_text' ); ?></a>
-					<?php elseif (get_field( 'page_link' )): ?>
-						<a class="book" href="<?php the_field( 'page_link' ); ?>" title=""><?php the_field( 'link_text' ); ?></a>
-					<?php elseif (get_field( 'site_url' )): ?>
-						<a class="book" href="<?php the_field( 'site_url' ); ?>" target="_blank" title=""><?php the_field( 'link_text' ); ?></a>
+					<?php if (get_field( 'type' ) === 'None'): ?>
+						
+					<?php else:  ?>
+						<?php if (get_field( 'file_url' )): ?>
+							<a class="book" href="<?php the_field( 'file_url' ); ?>" target="_blank" title=""><?php the_field( 'link_text' ); ?></a>
+						<?php elseif (get_field( 'page_link' )): ?>
+							<a class="book" href="<?php the_field( 'page_link' ); ?>" title=""><?php the_field( 'link_text' ); ?></a>
+						<?php elseif (get_field( 'site_url' )): ?>
+							<a class="book" href="<?php the_field( 'site_url' ); ?>" target="_blank" title=""><?php the_field( 'link_text' ); ?></a>
+						<?php endif ?>
 					<?php endif ?>
 				</div>
+				<?php 
+				$images = get_field('gallery');
+				$size = 'full'; // (thumbnail, medium, large, full or custom size)
+				if( $images ): ?>
+				<div class="row">
+					<div class="gallery">
+						<ul><!--
+							<?php foreach( $images as $image ): ?>
+							--><li>
+								<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+							</li><!--
+							<?php endforeach; ?>
+						--></ul>
+					</div>
+				</div>
+				<?php endif; ?>
 
 			</div>
 

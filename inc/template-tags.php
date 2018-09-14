@@ -118,6 +118,12 @@ function swallowfields_post_thumbnail() {
 
 	<div class="post-thumbnail">
 		<?php the_post_thumbnail(); ?>
+
+		<?php if (is_singular( 'tents' )): ?>
+			<?php if (get_field( 'price' )): ?>
+			<span class="price-from"><small>FROM</small>£<?php the_field( 'price' ); ?><small>Per <?php the_field( 'price_per' ); ?></small></span>
+			<?php endif; ?>
+		<?php endif; ?>
 	</div><!-- .post-thumbnail -->
 
 	<?php else : ?>
@@ -203,7 +209,7 @@ function swallowfields_post_tyoes() {
 			'public' 		=> true,
 			'has_archive' 	=> false,
 			'menu_icon' 	=> 'dashicons-admin-multisite',
-			'supports' 		=> array( 'title', 'editor', 'thumbnail' )
+			'supports' 		=> array( 'title', 'editor', 'thumbnail', 'excerpt' )
 		)
 	);
 	register_post_type( 'facilities',
@@ -215,7 +221,7 @@ function swallowfields_post_tyoes() {
 			'public' 		=> true,
 			'has_archive' 	=> false,
 			'menu_icon' 	=> 'dashicons-store',
-			'supports' 		=> array( 'title', 'editor', 'thumbnail' )
+			'supports' 		=> array( 'title', 'editor', 'thumbnail', 'excerpt' )
 		)
 	);
 	register_post_type( 'amenities',

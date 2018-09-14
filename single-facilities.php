@@ -21,12 +21,16 @@ get_header(); ?>
 
 					endwhile; // End of the loop.
 					?>
-					<?php if (get_field( 'file_url' )): ?>
-						<a class="book" href="<?php the_field( 'file_url' ); ?>" target="_blank" title=""><?php the_field( 'link_text' ); ?></a>
-					<?php elseif (get_field( 'page_link' )): ?>
-						<a class="book" href="<?php the_field( 'page_link' ); ?>" title=""><?php the_field( 'link_text' ); ?></a>
-					<?php elseif (get_field( 'site_url' )): ?>
-						<a class="book" href="<?php the_field( 'site_url' ); ?>" target="_blank" title=""><?php the_field( 'link_text' ); ?></a>
+					<?php if (get_field( 'type' ) === 'None'): ?>
+						
+					<?php else:  ?>
+						<?php if (get_field( 'file_url' )): ?>
+							<a class="book" href="<?php the_field( 'file_url' ); ?>" target="_blank" title=""><?php the_field( 'link_text' ); ?></a>
+						<?php elseif (get_field( 'page_link' )): ?>
+							<a class="book" href="<?php the_field( 'page_link' ); ?>" title=""><?php the_field( 'link_text' ); ?></a>
+						<?php elseif (get_field( 'site_url' )): ?>
+							<a class="book" href="<?php the_field( 'site_url' ); ?>" target="_blank" title=""><?php the_field( 'link_text' ); ?></a>
+						<?php endif ?>
 					<?php endif ?>
 				</div>
 				<div class="row">

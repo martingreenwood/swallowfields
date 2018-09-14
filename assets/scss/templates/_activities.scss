@@ -173,7 +173,7 @@ Text Domain: swallowfields
 					text-decoration: none;
 					padding: 1.5rem 2.5rem;
 					margin-top: 4rem;
-					font-weight: 200;
+					// font-weight: 200;
 				}
 
 				.table {
@@ -228,6 +228,8 @@ Text Domain: swallowfields
 			color: white;
 			margin-top: 8rem;
 			display: inline-block;
+
+			background-color: $red !important;
 		}
 
 		.item {

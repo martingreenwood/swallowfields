@@ -24,7 +24,7 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				?>
 
-				<a class="more" href="<?php echo home_url( '/tents/spa-lodge' ); ?>" title="View lodge">View lodge</a>
+				<!-- <a class="more" href="<?php echo home_url( '/tents/spa-lodge' ); ?>" title="View lodge">View lodge</a> -->
 
 			</div>
 		</main>
@@ -123,7 +123,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<a class="more" href="<?php echo home_url( '/tents/spa-lodge/' ); ?>" title="">View Lodge</a>
+			<a class="more coral" href="<?php echo home_url( '/book-now/' ); ?>" title="">Book Now</a>
 
 		</div>
 

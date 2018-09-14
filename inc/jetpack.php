@@ -17,7 +17,7 @@
 function swallowfields_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
+		'container' => 'theposts',
 		'render'    => 'swallowfields_infinite_scroll_render',
 		'footer'    => 'page',
 	) );

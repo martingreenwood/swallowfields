@@ -75,6 +75,8 @@
 		display: inline-block;
 		margin-top: 10px;
 		margin-bottom: 10px;
+		position: relative;
+		z-index: 99;
 
 		@media (#{$bp-larger-than-desktop}) {
 			float: left;
@@ -161,10 +163,10 @@
 					text-decoration: none;
 					color: $dark-grey;
 					font-size: 1.2rem;
-					font-weight: 200;
+					// font-weight: 200;
 					font-family: $nav-font-family;
 					padding: 0 5px;
-					line-height: 3;
+					line-height: 2.4;
 					text-transform: uppercase;
 
 					@media (#{$bp-larger-than-desktop}) {
@@ -189,7 +191,7 @@
 				border-bottom: 1px solid #ccc;
 				margin-bottom: 0;
 				padding: 7px 0;
-				width: 63%;
+				width: 90%;
 				display: block;
 				margin: 0 auto;
 
@@ -223,7 +225,7 @@
 
 					a {
 						display: block;
-						line-height: 3;
+						line-height: 2.4;
 
 						@media (#{$bp-larger-than-desktop}) {
 							line-height: 47px;
@@ -257,6 +259,21 @@
 
 	#site-navigation {
 		margin-top: 0;
+	}
+
+	.hamburger {
+		position: absolute;
+		bottom: 50px;
+		right: 50%;
+		margin-right: -20px;
+
+		element {
+			color: black;
+		}
+
+		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+			background-color: black;
+		}
 	}
 }
 

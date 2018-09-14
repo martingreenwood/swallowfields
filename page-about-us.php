@@ -29,7 +29,7 @@ get_header(); ?>
 				</div>
 
 				<div class="row">
-					<h2>Our Showreel</h2>
+					<h2>Visit the Malverns</h2>
 					<div class="embed-container">
 						<?php
 

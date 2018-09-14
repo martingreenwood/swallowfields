@@ -1,12 +1,12 @@
 // Typography
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600');
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 200;
+  font-weight: 400;
   font-family: $heading-font-family;
   color: $primary-color;
 }

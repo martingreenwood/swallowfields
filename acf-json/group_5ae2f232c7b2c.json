@@ -18,14 +18,15 @@
             "choices": {
                 "External Link": "External Link",
                 "File": "File",
-                "Page": "Page"
+                "Page": "Page",
+                "None": "None"
             },
             "allow_null": 0,
             "other_choice": 0,
-            "save_other_choice": 0,
             "default_value": "",
             "layout": "horizontal",
-            "return_format": "value"
+            "return_format": "value",
+            "save_other_choice": 0
         },
         {
             "key": "field_5ae2f4a089a2c",
@@ -151,5 +152,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1524824526
+    "modified": 1532604041
 }

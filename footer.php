@@ -43,6 +43,17 @@
 				</div>
 
 			</div>
+			<?php if (is_front_page()): ?>
+			<div class="row">
+				<div class="acred">
+					<p>Swallowfields Retreat Ltd: Glamping Project is part funded<br>by the European Agricultural Fund for Rural Development</p>
+					<ul>
+						<li><img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/eulogo1.png' ?>" alt=""></li><!--
+						--><li><img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/eulogo2.jpg' ?>" alt=""></li>
+					</ul>
+				</div>
+			</div>
+			<?php endif ?>
 		</div>
 		
 	</section>

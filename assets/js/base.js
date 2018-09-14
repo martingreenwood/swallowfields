@@ -75,6 +75,7 @@ setTimeout( function() { scroll(0,0); }, 1);
 	$('.hamburger').on('click', function(event) {
 		event.preventDefault();
 		$(this).toggleClass('is-active');
+		$('body').toggleClass('no-sroll');
 		$('#masthead').toggleClass('toggled');
 	});
 	

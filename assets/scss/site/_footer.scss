@@ -78,6 +78,35 @@
 			color: $light-grey;
 		}
 	}
+
+	.acred {
+		text-align: center;
+
+		p {
+			margin-bottom: 3rem;
+			color: $dark-grey;
+			font-size: 12px;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				display: inline-block;
+				width: auto;
+				vertical-align: top;
+				margin: 0 5px;
+
+				img {
+					height: 60px;
+					width: auto;
+					display: block;
+				}
+			}
+		}
+	}
 }
 
 #colophon {
